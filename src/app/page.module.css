@@ -1,67 +1,75 @@
 .container {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
   width: 100dvw;
   height: 100dvh;
-}
-.left {
-  flex: 1;
+
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-evenly;
 }
-.right {
-  flex: 1;
+
+.contentContainer {
+  margin: 0 50px 300px 50px;
+}
+
+.logo {
+  position: relative;
+  display: flex;
+
+  width: 500px;
+  height: 100%;
+}
+
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.right h1 {
-  font-weight: bold;
-  font-size: 64px;
-  margin: 48px 0;
-}
-.right h2 {
-  font-weight: bold;
-  font-size: 31px;
-  margin-bottom: 32px;
-}
-.right h3 {
-  font-weight: bold;
-  font-size: 17px;
-  margin-bottom: 20px;
-  margin-top: 40px;
+
+  gap: 30px;
+
+  height: 100%;
 }
 
-.signup {
-  width: 300px;
-  height: 40px;
-  border-radius: 20px;
-  padding: 0 16px;
-  font-size: 15px;
-  background-color: rgb(29, 155, 240);
+.mainCopy {
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.subCopy {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.joinButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+
+  background-color: rgb(70, 175, 224);
   color: white;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.signup:hover {
-  background-color: rgb(26, 140, 216);
-}
-.login {
-  width: 300px;
+
+  border-radius: 9999px;
+
+  width: 266px;
   height: 40px;
-  border-radius: 20px;
-  padding: 0 16px;
-  font-size: 15px;
-  color: rgb(29, 155, 240);
-  border: 1px solid rgb(207, 217, 222);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-.login:hover {
-  background-color: rgba(29, 155, 240, 0.1);
+
+.loginCopy {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.loginButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+
+  background-color: white;
+  color: rgb(70, 175, 224);
+
+  border: 1px solid rgb(207, 217, 222);
+  border-radius: 9999px;
+
+  width: 266px;
+  height: 40px;
 }
