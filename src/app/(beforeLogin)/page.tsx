@@ -1,6 +1,7 @@
 import Image from "next/image";
-import logo from "../../public/logo.svg";
+import logo from "../../../public/logo.svg";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,9 +20,13 @@ export default function Home() {
         <div className={styles.content}>
           <span className={styles.mainCopy}>지금 일어나고 있는 일</span>
           <span className={styles.subCopy}>지금 가입하세요.</span>
-          <button className={styles.joinButton}>계정 만들기</button>
+          <Link href="/i/flow/signup" className={styles.joinButton}>
+            계정 만들기
+          </Link>
           <span className={styles.loginCopy}>이미 가입하셨나요?</span>
-          <button className={styles.loginButton}>로그인</button>
+          <Link href="/login" className={styles.loginButton}>
+            로그인
+          </Link>
         </div>
       </div>
     </main>

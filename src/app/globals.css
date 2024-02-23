@@ -7,3 +7,9 @@
 button {
   all: unset;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
