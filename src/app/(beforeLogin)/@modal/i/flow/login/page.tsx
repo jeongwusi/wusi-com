@@ -1,8 +1,8 @@
 import Image from "next/image";
-import styles from "./page.module.css";
-import close from "../../../../public/close.svg";
-import logo from "../../../../public/logo.svg";
 import Link from "next/link";
+import styles from "./page.module.css";
+import close from "../../../../../../../public/close.svg";
+import logo from "../../../../../../../public/logo.svg";
 
 const Modal = () => {
   return (
